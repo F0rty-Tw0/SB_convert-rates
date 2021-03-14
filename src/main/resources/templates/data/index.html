@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Valuta omregner | Live kurser</title>
+    <meta name="description" content="Valuta omregner | Live kurser">
+    <meta name="author" content="Art">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1
+            th:text="${myRates.getAmount()  + ' ' +  myRates.getFirstDescription() + ' til ' + myRates.getSecondDescription() + ' = ' + myRates.getTotal() + ' ' + myRates.getSecondDescription()}">
+        </h1>
+        <u><a href="/">Tilbage</a></u>
+    </div>
+</body>
+
+</html>

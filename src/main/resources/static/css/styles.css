@@ -1,0 +1,97 @@
+body {
+	font-family: 'Roboto';
+	background: linear-gradient(90deg, rgb(180, 144, 202) 0%, rgb(94, 231, 223) 100%);
+	background-size: 200% 200%;
+	overflow: hidden;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+	margin: 0;
+	padding: 10px 20px;
+	background: rgb(110, 109, 181);
+	color: white;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: normal;
+}
+label {
+	display: block;
+	padding: 5px 5px;
+}
+input,
+select {
+	font-size: 20px;
+	background: #f1f5ea;
+	border: 3px solid rgba(110, 109, 181);
+	border-right: none;
+	border-left: none;
+	color: rgb(110, 109, 181);
+	width: 100%;
+	padding: 10px 10px 10px 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+option {
+	cursor: pointer;
+}
+
+input:focus,
+select:focus {
+	background: #f1f5ea;
+	border: 3px solid rgb(110, 109, 181);
+	border-right: none;
+	border-left: none;
+	outline: none;
+}
+
+button {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+button:focus {
+	outline: transparent;
+}
+
+a {
+	color: rgb(61, 34, 78);
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0 167px;
+}
+
+#container {
+	width: 400px;
+	margin: 150px auto;
+	background: #f1f5ea;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	border: 3px solid rgba(110, 109, 181);
+}
+
+#btnintext {
+	margin-left: 135px;
+	padding: 10px 0;
+	font-size: 25px;
+	color: rgb(110, 109, 181);
+	cursor: pointer;
+}
+
+#result {
+	color: rgb(110, 109, 181);
+	font-size: 26px;
+	padding: 0px 20px 10px 20px;
+}
